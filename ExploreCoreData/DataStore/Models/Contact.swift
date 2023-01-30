@@ -33,7 +33,7 @@ struct ContactFilter: QueryFilter {
     static let all = ContactFilter()
 
     private var filterType: FilterType = .all
-    var contactID: String = ""
+    var searchString: String = ""
 
     private enum FilterType {
         case all
@@ -43,8 +43,8 @@ struct ContactFilter: QueryFilter {
         let fetchRequest = ManagedContact.fetchRequest() as NSFetchRequest<ManagedContact>
         switch filterType {
         case .all:
-            if !contactID.isEmpty {
-                fetchRequest.predicate = NSPredicate(format: "id == %@", contactID)
+            if !searchString.isEmpty {
+                fetchRequest.predicate = NSPredicate(format: "givenName BEGINSWITH[cd] %@", searchString)
             } else {
                 fetchRequest.predicate = NSPredicate(value: true)
             }

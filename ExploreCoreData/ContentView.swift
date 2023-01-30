@@ -15,6 +15,7 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             List {
+                TextField("Search", text: $contacts.searchString)
                 ForEach(contacts) { contact in
                     NavigationLink {
                         Text(contact.displayName)
@@ -37,6 +38,9 @@ struct ContentView: View {
             }
             Text("Select a contact")
         }
+//        .onAppear {
+//            contacts.searchString = .constant("G")
+//        }
     }
 
     private func addItem() {
