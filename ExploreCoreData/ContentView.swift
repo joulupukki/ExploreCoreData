@@ -18,8 +18,7 @@ struct ContentView: View {
                 TextField("Search", text: $contacts.searchString)
                 ForEach(contacts) { contact in
                     NavigationLink {
-                        Text(contact.displayName)
-                            .font(.headline)
+                        ContactDetailView(contactID: contact.id)
                     } label: {
                         Text(contact.displayName)
                     }
@@ -39,7 +38,7 @@ struct ContentView: View {
             Text("Select a contact")
         }
 //        .onAppear {
-//            contacts.searchString = .constant("G")
+//            $contacts.searchString.wrappedValue = "G"
 //        }
     }
 

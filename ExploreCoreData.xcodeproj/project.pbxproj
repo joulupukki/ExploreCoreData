@@ -16,6 +16,7 @@
 		219EC5632984879D00982F08 /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219EC55D298485CA00982F08 /* DataStore.swift */; };
 		219EC5642984879D00982F08 /* QueryResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219EC55E298485CE00982F08 /* QueryResults.swift */; };
 		219EC567298487C200982F08 /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 219EC566298487C200982F08 /* Contact.swift */; };
+		21E61CBA298985E30072712F /* ContactDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21E61CB9298985E30072712F /* ContactDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		219EC55D298485CA00982F08 /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
 		219EC55E298485CE00982F08 /* QueryResults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QueryResults.swift; sourceTree = "<group>"; };
 		219EC566298487C200982F08 /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
+		21E61CB9298985E30072712F /* ContactDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				219EC54A2984859C00982F08 /* ContentView.swift */,
 				219EC54C2984859D00982F08 /* Assets.xcassets */,
 				219EC54E2984859D00982F08 /* Preview Content */,
+				21E61CB9298985E30072712F /* ContactDetailView.swift */,
 			);
 			path = ExploreCoreData;
 			sourceTree = "<group>";
@@ -172,6 +175,7 @@
 				219EC54B2984859C00982F08 /* ContentView.swift in Sources */,
 				219EC5552984859D00982F08 /* ExploreCoreData.xcdatamodeld in Sources */,
 				219EC5632984879D00982F08 /* DataStore.swift in Sources */,
+				21E61CBA298985E30072712F /* ContactDetailView.swift in Sources */,
 				219EC5492984859C00982F08 /* ExploreCoreDataApp.swift in Sources */,
 				219EC5642984879D00982F08 /* QueryResults.swift in Sources */,
 				219EC567298487C200982F08 /* Contact.swift in Sources */,
